@@ -7,4 +7,8 @@ public class Tesla extends Car{
     public void autoPilot(){
         System.out.println(make+" "+model+" is self driving");
     }
+
+    public void start(){
+        System.out.println("Shift to drive to start moving");
+    }
 }
