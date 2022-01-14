@@ -40,4 +40,15 @@ public class Employee extends Person{
     public void work(){
         System.out.println(getName()+" is working");
     }
+
+    public String toString() {
+        return "Employee{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                "employeeID=" + employeeID +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }
