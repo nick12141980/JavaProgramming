@@ -24,7 +24,7 @@ public class ShapeObjects {
 
         Circle circle = new Circle(11);
         System.out.println(circle);
-        System.out.println(circle.pi);
+
 
 
     }
