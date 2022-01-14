@@ -1,6 +1,12 @@
 package day39_Recap.cydeoTask;
 
-public class Student {
+public class Student extends Person{
+
+    public Student(String name, int age, char gender, int studentID, String fieldOfStudy) {
+        super(name, age, gender);
+       setStudentID(studentID);
+       setFieldOfStudy(fieldOfStudy);
+    }
 
     private int studentID;
     private String fieldOfStudy;
@@ -19,5 +25,9 @@ public class Student {
 
     public void setFieldOfStudy(String fieldOfStudy) {
         this.fieldOfStudy = fieldOfStudy;
+    }
+
+    public void study(){
+
     }
 }
