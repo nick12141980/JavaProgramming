@@ -28,6 +28,17 @@ public class Student extends Person{
     }
 
     public void study(){
+        System.out.println(getName()+" is learning");
+    }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + getName() + '\'' +
+                ", age=" + getAge() +
+                ", gender=" + getGender() +
+                "studentID=" + studentID +
+                ", fieldOfStudy='" + fieldOfStudy + '\'' +
+                '}';
     }
 }
