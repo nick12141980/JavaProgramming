@@ -34,6 +34,10 @@ public class Shape {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Shape{" +
+                "name='" + name + '\'' +
+                ", area='" + area() + '\'' +
+                ", perimeter='" + perimeter() + '\'' +
+                '}';
     }
 }
