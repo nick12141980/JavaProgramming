@@ -2,8 +2,8 @@ package day39_Recap.shapeTask;
 
 public class Rectangle extends Shape{
 
-    public Rectangle(String name, double length, double width) {
-        super(name);
+    public Rectangle(double length, double width) {
+        super("Rectangle");
         setLength(length);
         setWidth(width);
     }
@@ -33,5 +33,25 @@ public class Rectangle extends Shape{
             System.exit(1);
         }
         this.width = width;
+    }
+
+    @Override
+    public double area() {
+        return length*width;
+    }
+
+    @Override
+    public double perimeter() {
+        return (length+width)*2;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "length=" + length +
+                ", width=" + width +
+                ", area=" + area() +
+                ", perimeter=" + perimeter() +
+                '}';
     }
 }
