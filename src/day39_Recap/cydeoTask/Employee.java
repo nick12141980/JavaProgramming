@@ -1,6 +1,13 @@
 package day39_Recap.cydeoTask;
 
-public class Employee {
+public class Employee extends Person{
+
+    public Employee(String name, int age, char gender, int employeeID, String jobTitle, double salary) {
+        super(name, age, gender);
+        setEmployeeID(employeeID);
+        setJobTitle(jobTitle);
+        setSalary(salary);
+    }
 
     private int employeeID;
     private String jobTitle;
@@ -28,5 +35,9 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+    public void work(){
+        System.out.println(getName()+" is working");
     }
 }
