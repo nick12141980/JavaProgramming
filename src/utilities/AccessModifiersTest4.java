@@ -9,6 +9,8 @@ public class AccessModifiersTest4 extends ProtectedAccessModifier {
       //  System.out.println(AccessModifiersTest4.name1); default is not visible outside the package
         System.out.println(AccessModifiersTest4.name2); // protected is visible
 
+        AccessModifiersTest4.method2();
+
     }
 
 
