@@ -21,9 +21,7 @@ public class EncapsulationReview {
     }
 
     public void setCircle(Circle circle){
-        if (circle.setRadius())<0){
-            return;
-        }
+
         this.circle = circle;
     }
 }
