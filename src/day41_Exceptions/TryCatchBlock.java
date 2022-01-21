@@ -42,6 +42,8 @@ public class TryCatchBlock {
             e.printStackTrace();
         }
 
+        System.out.println("Test 3 completed");
+
 
 
 
