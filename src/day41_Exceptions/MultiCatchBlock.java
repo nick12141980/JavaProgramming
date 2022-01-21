@@ -16,9 +16,14 @@ public class MultiCatchBlock {
         }catch (ArithmeticException e){
             System.out.println("Second catch block");
             e.printStackTrace();
-        }catch (NullPointerException e){
+        }catch (ClassCastException e){
             System.out.println("Third catch block");
             e.printStackTrace();
+        }catch (RuntimeException e){
+            System.out.println("Fourth catch block");
+            e.printStackTrace();
         }
+
+        System.out.println("Test completed");
     }
 }
