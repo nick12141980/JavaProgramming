@@ -44,6 +44,19 @@ public class TryCatchBlock {
 
         System.out.println("Test 3 completed");
 
+        System.out.println("------------------------------");
+
+        System.out.println("Hello");
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println("Cydeo");
+
 
 
 
