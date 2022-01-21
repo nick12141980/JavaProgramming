@@ -10,7 +10,7 @@ public class MultiCatchBlock {
 
         try {
             System.out.println(employee.getSalary());
-        }catch (IndexOutOfBoundsException e){
+        }catch (NullPointerException e){
             System.out.println("First catch block");
             e.printStackTrace();
         }catch (ArithmeticException e){
@@ -25,5 +25,11 @@ public class MultiCatchBlock {
         }
 
         System.out.println("Test completed");
+
+        try {
+            System.out.println("Java".charAt(-1));
+        }catch (RuntimeException e){
+            e.printStackTrace();
+        }
     }
 }
