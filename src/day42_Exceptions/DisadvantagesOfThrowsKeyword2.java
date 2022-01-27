@@ -5,6 +5,13 @@ import java.io.FileNotFoundException;
 
 public class DisadvantagesOfThrowsKeyword2 {
 
+    public static void main(String[] args) throws Exception{
+        method();
+        method1();
+        method2();
+        method3();
+    }
+
     public static void method(){
         try {
             method1();
