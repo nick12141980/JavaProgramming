@@ -5,11 +5,28 @@ import java.io.FileNotFoundException;
 
 public class DisadvantagesOfThrowsKeyword2 {
 
+    public static void method(){
+        try {
+            method1();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void method1() throws FileNotFoundException {
         new FileInputStream("");
     }
 
     public static void method2() throws FileNotFoundException {
         method1();
+    }
+
+    public static void method3() throws FileNotFoundException, InterruptedException {
+        method1();
+        Thread.sleep(1000);
+    }
+
+    public static void method4() throws FileNotFoundException, InterruptedException {
+        method3();
     }
 }
