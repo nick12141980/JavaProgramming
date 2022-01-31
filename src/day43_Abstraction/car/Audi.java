@@ -9,4 +9,8 @@ public class Audi extends Car{
     public void start(){
         System.out.println("Press engine start button");
     }
+
+    public void autoPark(){
+        System.out.println(getMake()+" "+"has auto park feature");
+    }
 }
