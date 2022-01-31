@@ -1,4 +1,18 @@
 package day43_Abstraction.car;
 
-public class Tesla {
+public final class Tesla extends Car{
+
+
+    public Tesla( String model, String color, int year, double price) {
+        super("Tesla", model, color, year, price);
+    }
+
+    @Override
+    public void start() {
+        System.out.println("Say start");
+    }
+
+    public void autoPilot(){
+        System.out.println(getMake()+" has autopilot feature");
+    }
 }
