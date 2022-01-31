@@ -6,5 +6,7 @@ public class Honda extends Car{
         super(make, model, color, year, price);
     }
 
-    public
+    public void start(){
+        System.out.println("Turn the key to start");
+    }
 }
