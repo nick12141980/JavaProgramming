@@ -1,20 +1,21 @@
 package day43_Abstraction.car;
 
-public class Car {
+public abstract class Car {
 
     private final String make ,model;
     private String color;
-    private int year;
-    private final double price;
+    private final int year;
+    private double price;
 
-    public Car(String make, String model, String color, int year, double price) {
+    public Car(String make, String model, String color, int year, int year1, double price) {
         this.make = make;
         this.model = model;
+
         if(year<1886){
             throw new RuntimeException("Invalid year: "+year);
         }
+        this.year = year;
         setColor();
-        setYear();
         if(price<=0){
             throw new RuntimeException("Invalid price: "+price);
         }
@@ -45,7 +46,27 @@ public class Car {
         this.color = color;
     }
 
-    public void setYear(int year) {
-        this.year = year;
+    public void setPrice(double price) {
+        this.price = price;
     }
+
+    public String toString() {
+        return "Car{" +
+                "make='" + make + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", year=" + year +
+                ", price=$" + price +
+                '}';
+    }
+
+    public void stop(){
+        System.out.println("Press the brake");
+    }
+
+    public abstract void start();
+
+
+
+
 }
