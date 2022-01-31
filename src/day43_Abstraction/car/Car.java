@@ -15,7 +15,7 @@ public abstract class Car {
             throw new RuntimeException("Invalid year: "+year);
         }
         this.year = year;
-        setColor();
+        this.color = color;
         if(price<=0){
             throw new RuntimeException("Invalid price: "+price);
         }
