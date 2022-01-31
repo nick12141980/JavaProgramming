@@ -13,6 +13,9 @@ public class CarShop {
 
         Tesla tesla = new Tesla("Model Y","white",2021,45000);
 
+        honda.setColor("White");
+        audi.setPrice(159000);
+
         System.out.println(honda);
         System.out.println(audi);
         System.out.println(tesla);
