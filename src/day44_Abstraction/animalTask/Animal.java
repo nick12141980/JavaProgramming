@@ -1,13 +1,13 @@
 package day44_Abstraction.animalTask;
 
-public class Animal {
+public abstract class Animal {
 
     private String name, size;
     private final char gender;
     private final String breed, color;
     private int age;
 
-    public final static boolean canBreath = true;
+    public final static boolean canBreathe = true;
 
     public Animal(String name, String size, char gender, String breed, String color, int age) {
         setName(name);
@@ -58,6 +58,24 @@ public class Animal {
 
     public int getAge() {
         return age;
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", size='" + size + '\'' +
+                ", gender=" + gender +
+                ", breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+    public abstract void eat();
+
+    public final void drink(){
+        System.out.println(name+" drinks water");
     }
 }
 /*
