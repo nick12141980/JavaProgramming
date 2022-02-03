@@ -60,7 +60,6 @@ public abstract class Animal {
         return age;
     }
 
-    @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +
