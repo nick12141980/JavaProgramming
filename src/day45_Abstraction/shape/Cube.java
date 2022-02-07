@@ -1,18 +1,34 @@
 package day45_Abstraction.shape;
 
-public class Cube extends Shape{
+public class Cube extends Shape implements Volume{
 
-    public Cube(String name) {
-        super(name);
+    private double side;
+
+    public double getSide() {
+        return side;
+    }
+
+    public void setSide(double side) {
+        this.side = side;
+    }
+
+    public Cube(double side) {
+        super("Cube");
+        setSide(side);
     }
 
     @Override
     public double area() {
-        return 0;
+        return side*side*4;
     }
 
     @Override
     public double perimeter() {
-        return 0;
+        return side*6;
+    }
+
+    @Override
+    public double Volume() {
+        return side*side*side;
     }
 }
