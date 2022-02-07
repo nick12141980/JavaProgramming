@@ -31,4 +31,12 @@ public class Cube extends Shape implements Volume{
     public double Volume() {
         return side*side*side;
     }
+
+    @Override
+    public String toString() {
+        return "Cube{" +
+                super.toString()+
+                "side=" + side +
+                '}';
+    }
 }
