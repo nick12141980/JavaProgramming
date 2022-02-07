@@ -6,10 +6,6 @@ public class Eagle extends Animal implements Predatory, Flyable{
         super(name, size, gender, breed, color, age);
     }
 
-    public void fly(){
-        System.out.println(getName()+" is flying");
-    }
-
     @Override
     public void eat() {
         System.out.println(getName()+" eats snakes");
@@ -18,5 +14,10 @@ public class Eagle extends Animal implements Predatory, Flyable{
     @Override
     public void hunt() {
         System.out.println(getName()+" hunts snakes");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println(getName()+" can fly fast");
     }
 }
