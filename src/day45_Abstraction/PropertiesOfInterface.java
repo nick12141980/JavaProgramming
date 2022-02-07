@@ -28,3 +28,10 @@ public interface PropertiesOfInterface {
     }
 
 }
+class Test implements PropertiesOfInterface{
+
+    @Override
+    public void method3() {
+
+    }
+}
