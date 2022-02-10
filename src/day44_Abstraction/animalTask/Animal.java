@@ -13,7 +13,7 @@ public abstract class Animal {
         setName(name);
         setSize(size);
         if (!(gender == 'M' || gender == 'F')){
-            throw new RuntimeException("Invalid gender")
+            throw new RuntimeException("Invalid gender");
         }
         this.gender = gender;
         this.breed = breed;
