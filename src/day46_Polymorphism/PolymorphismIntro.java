@@ -15,7 +15,7 @@ public class PolymorphismIntro {
 
     Boolean r1 =true;
 
-    Object[] = {str, n1, b2, r1, new Circle(4), new Square(5)};
+    Object[] arr = {str, n1, b2, r1, new Circle(4), new Square(5)};
 
     public static void main(String[] args) {
 
