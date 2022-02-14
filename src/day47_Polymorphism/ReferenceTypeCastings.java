@@ -42,6 +42,10 @@ public class ReferenceTypeCastings {
 
       //  ((Developer) employee).unitTest();
 
+         Shape s1 = new Circle(10);
+        s1.area();
+        s1.perimeter();
+
 
     }
 }
