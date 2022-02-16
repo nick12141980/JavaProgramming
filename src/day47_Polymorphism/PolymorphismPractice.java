@@ -111,4 +111,3 @@ public class PolymorphismPractice {
 			1.3 Write a program that can display the car that has the lowest mileage
  */
 
-}

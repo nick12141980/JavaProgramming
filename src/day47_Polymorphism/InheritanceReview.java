@@ -7,7 +7,7 @@ public class InheritanceReview {
     }
 
     int a;
-    void method1{
+    void method1(){
 
     }
 
