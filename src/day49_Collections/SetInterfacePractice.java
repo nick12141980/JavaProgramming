@@ -14,9 +14,15 @@ public class SetInterfacePractice {
         System.out.println(hashSet);
 
         Set<Integer> linkedHashSet = new LinkedHashSet<>();
+        linkedHashSet.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet.addAll(Arrays.asList(10,200,300,40,90));
+        linkedHashSet.addAll(Arrays.asList(10,200,300,40,90));
+        System.out.println(linkedHashSet);
+
 
         Set<Integer> treeSet = new TreeSet<>();
-
+x
 
     }
 }
