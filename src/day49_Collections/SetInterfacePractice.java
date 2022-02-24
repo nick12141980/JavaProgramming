@@ -22,7 +22,12 @@ public class SetInterfacePractice {
 
 
         Set<Integer> treeSet = new TreeSet<>();
-x
+        treeSet.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet.addAll(Arrays.asList(10,200,300,40,90));
+        treeSet.addAll(Arrays.asList(10,200,300,40,90));
+        System.out.println(treeSet);
+
 
     }
 }
