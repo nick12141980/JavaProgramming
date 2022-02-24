@@ -26,6 +26,24 @@ public class SetPractice {
 
         s.addAll(Arrays.asList(array));
 
+        Integer[] nums = {1,2,3,4,5,6,7,8,1,1,2,3,4,4,5,5,6,7,8,9};
+
+        nums = new LinkedHashSet<>(Arrays.asList(nums)).toArray(new Integer[0]);
+
+        System.out.println(Arrays.toString(nums));
+
+        String str ="aaaabbbbcccdddee";
+        String result="";
+
+        for (String each : new LinkedHashSet<>(Arrays.asList(str.split("")))) {
+            int count = Collections.frequency(Arrays.asList(str.split("") ), each);
+            result += each+count;
+        }
+
+        System.out.println(result);
+
+
+
 
     }
 }
