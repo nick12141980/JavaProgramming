@@ -56,5 +56,8 @@ public class IterablePractice {
         }
 
         System.out.println(list3);
+
+        List<Integer> list4 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,1,2,3,4,5,1,2,3));
+        list4.removeIf(each -> each < 4 );
     }
 }
