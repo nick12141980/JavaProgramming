@@ -16,5 +16,8 @@ public class ListSetPractice {
         List<Integer> list = new ArrayList<>(set);
         System.out.println(list);
 
+        List<String> names = null;
+        System.out.println(names.size());
+
     }
 }
