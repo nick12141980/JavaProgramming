@@ -37,6 +37,29 @@ public class MapPractice2 {
         }
         System.out.println(name1);
         System.out.println(name2);
+
+        int count = 0;
+        for (Integer eachValue : map.values()) {
+            if (eachValue >= 120000 && eachValue <= 150000){
+                count++;
+            }
+        }
+        System.out.println(count);
+
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            if (pair.getValue() <= 118000){
+                System.out.println(pair.getKey());
+            }
+        }
+
+        for (Map.Entry<String, Integer> pair : map.entrySet()) {
+            if (pair.getValue() < 120000){
+                pair.setValue(pair.getValue() + 10000);
+            }
+        }
+        System.out.println(map);
+
+
     }
 }
 /*
