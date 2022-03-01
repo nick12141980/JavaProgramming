@@ -33,7 +33,7 @@ public class MapClasses {
         treeMap.put(3, "Jack");
         treeMap.put(40, "Emma");
         treeMap.put(5, "Isabella");
-        //treeMap.put(null, null);
+        treeMap.put(6, null);
 
         System.out.println("treeMap = " + treeMap);
 
@@ -43,7 +43,7 @@ public class MapClasses {
         hashTable.put(3, "Jack");
         hashTable.put(40, "Emma");
         hashTable.put(5, "Isabella");
-        //treeMap.put(null, null);
+        //hashTable.put(6, null);
 
         System.out.println("hashTable = " + hashTable);
 
