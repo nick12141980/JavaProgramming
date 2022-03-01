@@ -20,6 +20,8 @@ public class MapPractice2 {
 
         String name1 = "";
         int maxSalary = Integer.MIN_VALUE;
+        int minSalary = Integer.MAX_VALUE;
+        String name2 = "";
 
         for (Map.Entry<String, Integer> pair : map.entrySet()) {
             String eachKey = pair.getKey();
@@ -28,8 +30,13 @@ public class MapPractice2 {
                 maxSalary = eachValue;
                 name1 = eachKey;
             }
+            if (eachValue < minSalary){
+                minSalary = eachValue;
+                name2 = eachKey;
+            }
         }
         System.out.println(name1);
+        System.out.println(name2);
     }
 }
 /*
