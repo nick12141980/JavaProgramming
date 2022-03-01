@@ -20,6 +20,10 @@ public class TestEnum {
             default:
                 System.out.println("Chrome");
         }
+
+        System.out.println("-------------------------------");
+
+        Seasons season = Seasons.SPRING;
     }
 
 
