@@ -91,6 +91,13 @@ public class MapIteration {
 
         System.out.println(number);
 
+        System.out.println("----------------------------------");
+
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            //System.out.println(entry);
+            System.out.println(entry.getKey()+" "+entry.getValue());
+        }
+
 
 
         
