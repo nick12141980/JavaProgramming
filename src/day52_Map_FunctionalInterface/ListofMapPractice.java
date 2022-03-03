@@ -7,18 +7,18 @@ public class ListofMapPractice {
     public static void main(String[] args) {
 
         Map<String, String> scrumTeam1 = new LinkedHashMap<>();
-        scrumTeam1.put("Abdulhamid","SM");
-        scrumTeam1.put("Nikita","Developer");
-        scrumTeam1.put("Alina","Developer");
-        scrumTeam1.put("Mert","PO");
-        scrumTeam1.put("Lee","SDET");
+        scrumTeam1.put("Abdulhamid", "SM");
+        scrumTeam1.put("Nikita", "Developer");
+        scrumTeam1.put("Alina", "Developer");
+        scrumTeam1.put("Mert", "PO");
+        scrumTeam1.put("Lee", "SDET");
         Map<String, String> scrumTeam2 = new LinkedHashMap<>();
-        scrumTeam2.put("Anton","SDET");
-        scrumTeam2.put("Muhammed","Developer");
-        scrumTeam2.put("Gulistan","Developer");
-        scrumTeam2.put("Ahmad","PO");
-        scrumTeam2.put("Nevim","SM");
-        scrumTeam2.put("Atakan","SDET");
+        scrumTeam2.put("Anton", "SDET");
+        scrumTeam2.put("Muhammed", "Developer");
+        scrumTeam2.put("Gulistan", "Developer");
+        scrumTeam2.put("Ahmad", "PO");
+        scrumTeam2.put("Nevim", "SM");
+        scrumTeam2.put("Atakan", "SDET");
         Map<String, String> scrumTeam3 = new LinkedHashMap<>();
         scrumTeam3.put("YanChun", "BA");
         scrumTeam3.put("Tahir", "Developer");
@@ -29,19 +29,19 @@ public class ListofMapPractice {
         Map<String, String> scrumTeam4 = new LinkedHashMap<>();
         scrumTeam4.put("Alim", "PO");
         scrumTeam4.put("Kaiser", "SDET");
-        scrumTeam4.put("Alinur","SDET");
-        scrumTeam4.put("Farya","Develepor");
+        scrumTeam4.put("Alinur", "SDET");
+        scrumTeam4.put("Farya", "Develepor");
         scrumTeam4.put("Sherzod", "Developer");
         scrumTeam4.put("Gulsen", "SM");
-        scrumTeam4.put("David","Sdet");
+        scrumTeam4.put("David", "Sdet");
         Map<String, String> scrum5 = new LinkedHashMap<>();
-        scrum5.put("Elza","SDET");
-        scrum5.put("Mehmet","Developer");
-        scrum5.put("Stefan","Developer");
-        scrum5.put("Rishat","PO");
-        scrum5.put("Ismail","SM");
-        scrum5.put("Tamara","SDET");
-        scrum5.put("Adnan","QA");
+        scrum5.put("Elza", "SDET");
+        scrum5.put("Mehmet", "Developer");
+        scrum5.put("Stefan", "Developer");
+        scrum5.put("Rishat", "PO");
+        scrum5.put("Ismail", "SM");
+        scrum5.put("Tamara", "SDET");
+        scrum5.put("Adnan", "QA");
 
         //1.1 Create a data structure that can contain all the given maps above
         List<Map<String, String>> scrumTeams = new ArrayList<>();
@@ -50,19 +50,19 @@ public class ListofMapPractice {
         System.out.println(scrumTeams);
         System.out.println(scrumTeams.size());
 
-        scrumTeams.addAll(Arrays.asList(scrumTeam2, scrumTeam3, scrumTeam4 ,scrum5));
+        scrumTeams.addAll(Arrays.asList(scrumTeam2, scrumTeam3, scrumTeam4, scrum5));
 
         //print the names of all employees
         for (Map<String, String> eachScrumTeam : scrumTeams) {
             for (Map.Entry<String, String> entry : eachScrumTeam.entrySet()) {
-                System.out.println(entry.getKey()+" "+entry.getValue());
+                System.out.println(entry.getKey() + " " + entry.getValue());
             }
         }
         System.out.println("---------------------------------------------");
 
         //  1.2 Print the names of all scrum masters
 
-        for(Map<String, String> eachScrumTeam  :  scrumTeams) {
+        for (Map<String, String> eachScrumTeam : scrumTeams) {
 
             /*
             for (String name : eachScrumTeam.keySet()) {
@@ -77,6 +77,8 @@ public class ListofMapPractice {
                 }
 
 
+            }
+        }
     }
 }
 /*
