@@ -40,7 +40,7 @@ public class MapPractice4 {
                 System.out.println(eachName);
             }
         }
-        }
+
 
     }
 }
