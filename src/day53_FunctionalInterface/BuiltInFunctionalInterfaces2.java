@@ -98,10 +98,11 @@ public class BuiltInFunctionalInterfaces2 {
             return map;
         };
 
-        List<String> names = new ArrayList<>(Arrays.asList("Layan", "Ksenia","Aygun");
+        List<String> names = new ArrayList<>(Arrays.asList("Layan", "Ksenia","Aygun"));
         List<Integer> scores = new ArrayList<>(Arrays.asList(90, 95, 100));
 
         Map<String, Integer> students = merge2.apply(names, scores);
+        System.out.println(students);
 
 
 
