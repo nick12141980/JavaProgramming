@@ -1,9 +1,8 @@
 package day53_FunctionalInterface;
 
-import java.util.Arrays;
-import java.util.LinkedHashMap;
-import java.util.Map;
+import java.util.*;
 import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 
 public class BuiltInFunctionalInterfaces2 {
@@ -61,6 +60,50 @@ public class BuiltInFunctionalInterfaces2 {
         scrumTeam1.forEach( (k, v) -> {
             System.out.println(k+" "+v);
         });
+
+        System.out.println("----------------------------------------------------");
+
+        //creat a function tha takes 2 integers and return maximum integer
+        BiFunction<Integer, Integer, Integer> maxNum = (a, b)->(a>b)?a:b;
+
+        System.out.println("maxNum.apply(100, 200) = " + maxNum.apply(100, 200));
+
+        //create a function that van merge two integer arrays into a List
+        BiFunction<int[], int[], List<Integer>> merge = (x, y) -> {
+            List<Integer> result = new ArrayList<>();
+            for (int each : x) result.add(each);
+            for(int each : y) result.add(each);
+            return result;
+        };
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 ={4,5,6,7,8,9};
+
+        List<Integer> nums = merge.apply(arr1, arr2);
+
+        System.out.println("----------------------------------------------------");
+
+        //create a function that takes a List of Integer and List of String And merge them into a Map
+        /*
+        names ==> {"Josh", "Daniel"}
+        score ==> {100, 110}
+        map ==> {Josh=100, Daniel=110}
+         */
+        BiFunction<List<String>, List<Integer>, Map<String, Integer>> merge2 = (j, k) -> {
+            Map<String, Integer> map = new HashMap<>();
+
+            for (int i = 0; i < j.size(); i++) {
+                map.put(j.get(i), k.get(i));
+            }
+
+            return map;
+        };
+
+        List<String> names = new ArrayList<>(Arrays.asList("Layan", "Ksenia","Aygun");
+        List<Integer> scores = new ArrayList<>(Arrays.asList(90, 95, 100));
+
+        Map<String, Integer> students = merge2.apply(names, scores);
+
+
 
     }
 }
