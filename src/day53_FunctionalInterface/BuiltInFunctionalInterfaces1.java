@@ -1,5 +1,8 @@
 package day53_FunctionalInterface;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
 
 public class BuiltInFunctionalInterfaces1 {
@@ -13,6 +16,25 @@ public class BuiltInFunctionalInterfaces1 {
         };
         boolean result = isPalindrome.test("level");
         System.out.println(result);
+
+        Predicate<Integer> isEven = p -> p%2==0;
+
+        System.out.println("-----------------------------------");
+
+        List<Integer> list = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,1,2,3,4));
+        list.removeIf(isEven);
+        System.out.println(list);
+
+        System.out.println("------------------------------------------");
+
+        List<String> names = new ArrayList<>();
+        names.addAll(Arrays.asList("Level", "Anna", "Java", "Python"));
+
+        names.removeIf(isPalindrome);
+
+        System.out.println(names);
+
+
 
     }
 }
