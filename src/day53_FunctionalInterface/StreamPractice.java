@@ -41,6 +41,23 @@ public class StreamPractice {
         List<Integer> even = list5.stream().filter( p -> p%2==0 ).collect(Collectors.toList());
         System.out.println(even);
 
+        List<String> names = new ArrayList<>(Arrays.asList("Java", "java", "jAvA","Python","Ruby"));
+        long count = names.stream().filter(p -> p.equalsIgnoreCase("java")).count();
+        System.out.println(count);
+
+        names.stream().filter(p -> p.equalsIgnoreCase("java")).forEach(p -> System.out.println(p));
+
+        List<Integer> list6 = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10,21));
+        boolean r1 = list6.stream().allMatch(p ->p%2==0);
+        System.out.println(r1);
+        boolean r2 = list6.stream().anyMatch(p -> p > 20);
+        System.out.println(r2);
+
+        boolean r3 = list6.stream().noneMatch(p -> p%3==0);
+        System.out.println(r3);
+
+
+
 
     }
 
